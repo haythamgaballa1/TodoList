@@ -4,7 +4,7 @@ $(document).ready(function(){ //بعد تحميل العناصر
         var task = $(this).val();
 
         $('#tasks').append('<li>' + task + '<i class="fa-solid fa-check"></i><i class="fa-solid fa-trash"></i> </li>');
-        $('.form')='';
+        $(task).val("")
     })
     $('ul').on('click','.fa-trash',function(){
         $(this).parent('li').fadeOut(200)
